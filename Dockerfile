@@ -12,8 +12,8 @@ ADD bot bot/
 ADD sql sql/
 ADD Cargo.lock .
 ADD Cargo.toml .
+ADD clean-score-all-mainnet.bash .
 ADD score-all-mainnet.sh .
-ADD clean-score-all-mainnet.sh .
 ADD import-into-sqlite.sh .
 
 RUN cargo build
