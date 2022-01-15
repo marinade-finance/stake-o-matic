@@ -18,6 +18,4 @@ ADD import-into-sqlite.sh .
 
 RUN cargo build
 
-CMD sqlite3 --version
-
-CMD ./clean-score-all-mainnet.sh
+CMD ./clean-score-all-mainnet.bash
