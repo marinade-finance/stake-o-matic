@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
 SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 DB_PATH="$SCRIPT_DIR/db"
@@ -14,4 +15,4 @@ docker run \
   --rm \
   --volume "$DB_PATH:/usr/local/db" \
   --env "VALIDATORS_APP_TOKEN=$VALIDATORS_APP_TOKEN" \
-  stake-o-matic
+  stake-o-matic ./clean-score-all-mainnet.bash
